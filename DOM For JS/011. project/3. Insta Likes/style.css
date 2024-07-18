@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #ffb3c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container {
+  height: 400px;
+  width: 300px;
+  background-color: #ff739f;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid red;
+  box-shadow: 0 5px 7px #fb2c6e;
+  position: relative; /* kyuki hme parent ka absolute le rahe hai */
+}
+#container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid red;
+  position: relative; /* kyuki hme parent ka absolute le rahe hai */
+}
+
+#container i {
+  /*remix icon (free icon) go to its github copy CDN aur paste krr dena hai css link ke uper ya niche*/
+  color: red;
+  font-size: 60px;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(50%, -50%) scale(0); /*  transfom property only ak baar hi likh skte hai to dusari property unker ander likh do */
+  opacity: 0;
+  transition: transform ease 0.5s;
+}

@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  height: 100vh; /* viewport height */
+  background-color: black;
+  overflow: hidden; /* prevent scrollbars */
+}
+
+.emoji {
+  font-size: 90px;
+  position: absolute;
+  pointer-events: none; /* prevent span from blocking mouse events */
+  transform: translate(-50%, -50%); /* center the emoji */
+  animation: fadeOut 1s forwards; /* fade out animation */
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0); /* shrink and fade out */
+  }
+}
