@@ -60,22 +60,46 @@ gsap.to("#box2", { x: 900, duration: 2, delay: 1 });
 
 //Animation in box with timeline
 
+// var tl = gsap.timeline();
+
+// tl.to("#box1", {
+//   x: 1200,
+//   backgroundColor: "blue",
+//   rotate: 360,
+//   duration: 1.5,
+//   delay: 1,
+// });
+
+// tl.to("#box2", {
+//   x: 1200,
+//   duration: 1.5,
+// });
+
+// tl.to("#box3", {
+//   x: 1200,
+//   duration: 1.5,
+// });
+
+//Animation in navbar with timeline in navbar
 var tl = gsap.timeline();
 
-tl.to("#box1", {
-  x: 1200,
-  backgroundColor: "blue",
-  rotate: 360,
-  duration: 1.5,
-  delay: 1,
+tl.from("h2", {
+  y: -20,
+  opacity: 0, //0 to 1
+  duration: 0.6,
+  delay: 0.5,
 });
 
-tl.to("#box2", {
-  x: 1200,
-  duration: 1.5,
+tl.from("h4", {
+  y: -20,
+  opacity: 0, //0 to 1
+  duration: 1,
+  stagger: 0.3,
 });
 
-tl.to("#box3", {
-  x: 1200,
-  duration: 1.5,
+tl.from("h1", {
+  y: 20,
+  opacity: 0, //0 to 1
+  duration: 0.3,
+  stagger: 0.2,
 });
