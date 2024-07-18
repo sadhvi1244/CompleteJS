@@ -1,0 +1,11 @@
+{
+  "name": "Anu",
+  "age": 20,
+  "email": "sadhvikesarwani1@gmail.com",
+  "isSubscribed": true,
+  "hobbies": ["Reading", "Running", "Cooking"],
+  "address": {
+    "city": "Prayagraj",
+    "idk": true
+  }
+}
